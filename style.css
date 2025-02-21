@@ -1,0 +1,83 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding:20px;
+     }
+  .gallery-item {
+    overflow: hidden;
+            }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 10, 0, 0.9);
+   }
+   .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+        }
+ .close:hover,
+ .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+              }
+h1{
+    background-color:rgb(30, 18, 118);
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-style:dashed;
+    border-radius: 100px;
+    border-right:50px solid #120b1b;
+    border-left:50px solid #200c0c;
+    }
+    ul{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background-color:#333 ;
+    }
+    li{
+        float:left;
+
+    }
+    li a {
+        display:block;
+        color:white;
+        text-align: center;
+        padding:14px 16px;
+        text-decoration:none;
+    }
+    li a:hover{
+        background-color: #111;
+
+    }
+    .active{
+        background-color: rgb(12, 60, 103);
+    
+    }
